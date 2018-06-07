@@ -1,0 +1,72 @@
+// Some special letter effects
+
+.swoop {
+	@include vendor('transition', (
+		'opacity #{_duration(on-scroll)} ease-in-out',
+		'transform #{_duration(on-scroll)} ease-in-out'
+	));
+	&.is-inactive {
+		opacity:0;
+		&.up {
+		@include vendor('transform', 'translateY(1rem)');
+		}
+		&.down {
+		@include vendor('transform', 'translateY(-1rem)');
+		}
+		&.left {
+		@include vendor('transform', 'translateX(1rem)');
+		}
+		&.right {
+			@include vendor('transform', 'translateX(-1rem)');
+		}
+	}
+}
+
+#logo {
+	font-family: _font(family-display);
+ 	font-weight: 900;
+	letter-spacing: 2px;
+	line-height: 1em;
+	text-transform: capitalize;
+
+	a {
+		border-bottom:none;
+
+		&:hover {
+				color: _palette(accent);
+		}
+
+	}
+}
+
+.display {
+	font-family: _font(family-display);
+	font-weight:900;
+	font-style:italic;
+	padding: 0 .25em;
+	color: darken(_palette(accent),10%);
+	opacity: 1;
+	@include text-gradient(10deg, darken(_palette(color1),0%), darken(_palette(color3),0%));
+	@include vendor('transition', 'opacity #{_duration(on-load)} ease-in-out');
+		span {
+				padding: 0 0.109em;
+				margin: 0 -.109em;
+	@include text-gradient(10deg, darken(_palette(color1),0%), darken(_palette(color3),0%));		}
+
+}
+
+.display_invert {
+	font-family: _font(family-display);
+	font-weight:900;
+	font-style:italic;
+	padding: 0 .25em;
+	color: darken(_palette(accent),10%);
+	opacity: 1;
+	@include text-gradient(10deg, darken(_palette(color6),0%), #ffffff);
+	@include vendor('transition', 'opacity #{_duration(on-load)} ease-in-out');
+		span {
+				padding: 0 0.109em;
+				margin: 0 -.109em;
+		@include text-gradient(10deg, darken(_palette(color6),0%), #ffffff);		}
+
+}

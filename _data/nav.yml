@@ -1,0 +1,6 @@
+# pages to appear in navivation
+- title: Home
+  path: /
+
+- title: The Process
+  path: /process

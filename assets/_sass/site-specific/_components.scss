@@ -1,0 +1,50 @@
+$gutter: _size(gutter);
+$duration: _duration(on-scroll);
+$ease: 'ease';
+
+article {
+  @include vendor('transition', (
+    'transform #{$duration} #{$ease}',
+    'opacity #{$duration} #{$ease}'
+  ));
+        color: #F7FFF7;
+
+        > h4, h5 {
+          color: #F7FFF7;
+
+        }
+
+        padding: _size(padding, medium);
+        border-radius: _size(border-radius);
+        margin: $gutter 0;
+
+
+        > header {
+          border-bottom: solid 1px #F7FFF7;
+          > h4 {
+            color: #F7FFF7;
+          }
+        }
+
+        > .content {
+          padding-top:  _size(padding, small);
+        }
+
+  &.style1 {
+      background: linear-gradient(0deg, _palette(color1), #1C8863);
+  }
+
+  &.style2 {
+    background: linear-gradient(0deg, #1B8368, #1A7F6C);
+  }
+
+  &.style3 {
+    background: linear-gradient(0deg, #187170, #186C7C);
+  }
+
+  &.style4 {
+    background: linear-gradient(0deg, #176782, _palette(color3));
+
+  }
+
+}
