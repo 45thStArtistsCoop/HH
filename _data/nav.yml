@@ -1,6 +1,6 @@
 # pages to appear in navivation
 - title: Home
-  path: {{ site.baseurl }}/
+  path: /
 
 - title: The Process
-  path: {{ site.baseurl }}/process
+  path: /process
