@@ -2,7 +2,7 @@
 title:       Horton + Holden
 description: "A site to stay updated on Horton and Holden"
 baseurl:     "/hh"
-url:         "https://45thstartistscoop.github.io/"
+url:         "https://45thstartistscoop.github.io/hh"
 date_format: "%b %-d, %Y"
 share-image: "/images/share.png"
 admin:      "Stevo"
