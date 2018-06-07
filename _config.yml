@@ -1,8 +1,8 @@
 # Site settings
 title:       Horton + Holden
 description: "A site to stay updated on Horton and Holden"
-baseurl:     ""
-url:         "http://zdan.news"
+baseurl:     "/hh"
+url:         "https://45thstartistscoop.github.io/"
 date_format: "%b %-d, %Y"
 share-image: "/images/share.png"
 admin:      "Stevo"
